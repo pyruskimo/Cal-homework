@@ -1,5 +1,5 @@
 FROM python:3
 
-ADD srs /src
+ADD src /src
 
 CMD [ "python", "./src/Cal_1Test.py" ]
