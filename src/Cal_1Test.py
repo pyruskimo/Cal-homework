@@ -1,3 +1,6 @@
+from math import sqrt
+
+
 def addition(a, b):
     a = int(a)
     b = int(b)
@@ -23,6 +26,8 @@ def sq(a):
     a = int(a)
     return int(a) * int(a)
 
+def square(base):
+  return power(base, 2)
 
 class Calculator:
     result = 0
@@ -48,6 +53,10 @@ class Calculator:
 
     def sq(self, a):
         self.result = sq(a)
+        return self.result
+
+    def sqrt(self, a):
+        self.result = sqrt(a)
         return self.result
 
 

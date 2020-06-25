@@ -3,7 +3,7 @@ from Fileutilities.absolutepath import absolutepath
 from pprint import pprint
 
 
-def ClassFactory(class_name, dictionary):
+def classFactory(class_name, dictionary):
     return type(class_name, (object,), dictionary)
 
 
