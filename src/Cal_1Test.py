@@ -1,4 +1,5 @@
 from math import sqrt
+from symbol import power
 
 
 def addition(a, b):
@@ -6,28 +7,34 @@ def addition(a, b):
     b = int(b)
     return int(a) + int(b)
 
+
 def subtraction(a, b):
     a = int(a)
     b = int(b)
     c = b - a
     return c
 
+
 def multiplication(a, b):
     a = int(a)
     b = int(b)
     return int(a) * int(b)
+
 
 def division(a, b):
     a = int(a)
     b = int(b)
     return int(a) / int(b)
 
+
 def sq(a):
     a = int(a)
     return int(a) * int(a)
 
+
 def square(base):
-  return power(base, 2)
+    return power(base, 2)
+
 
 class Calculator:
     result = 0
@@ -58,5 +65,3 @@ class Calculator:
     def sqrt(self, a):
         self.result = sqrt(a)
         return self.result
-
-
